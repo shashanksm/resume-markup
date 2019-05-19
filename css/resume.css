@@ -20,6 +20,19 @@
 	padding-bottom: 12px;
 	padding-left: 60px;
 	height: 830px;
+	display: flex;
+}
+
+.resume .content .content-left {
+	flex: 1 1 auto;
+	padding-right: 24px;
+	width: 349px;
+}
+
+.resume .content .content-right {
+	flex: 1 1 auto;
+	padding-left: 24px;
+	width: 349px;
 }
 
 .left-main {
@@ -90,7 +103,7 @@
 }
 
 .work-experience-points {
-	margin-bottom: 6px;
+	margin-bottom: 6px;	
 }
 
 @font-face {
