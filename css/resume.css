@@ -1,140 +1,215 @@
 .resume {
-	font-family: Ubuntu-Regular,sans-serif;
-	color: rgba(0, 0, 0, 0.801);
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.801);
 }
 
-.head {
-	padding: 36px;
-	padding-bottom: 12px;
-	padding-left: 60px;
-	border-bottom-color: #2962ff;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	z-index: -1;
+ul {
+  list-style: none; /* Remove default bullets */
+  margin-left:10px;
+  padding-left:10px;
+}
 
-	display: flex;
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2962ff; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.cert-name {
+	font-family: Ubuntu-Regular, sans-serif; 
+}
+
+
+.head {
+  padding: 36px;
+  padding-bottom: 12px;
+  padding-left: 60px;
+  border-bottom-color: #2962ff;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  z-index: -1;
+
+  display: flex;
 }
 
 .resume .content {
-	padding: 36px;
-	padding-bottom: 12px;
-	padding-left: 60px;
-	height: 830px;
-	display: flex;
+  padding: 36px;
+  padding-bottom: 12px;
+  padding-left: 60px;
+  height: 830px;
+  display: flex;
 }
 
 .resume .content .content-left {
-	flex: 1 1 auto;
-	padding-right: 24px;
-	width: 349px;
+  flex: 1 1 auto;
+  padding-right: 24px;
+  width: 349px;
 }
 
 .resume .content .content-right {
-	flex: 1 1 auto;
-	padding-left: 24px;
-	width: 349px;
+  flex: 1 1 auto;
+  padding-left: 24px;
+  width: 349px;
 }
 
 .left-main {
-	margin-right: 12px;
-	flex-grow: 3;
-	flex-basis: 60%;
+  margin-right: 12px;
+  flex-grow: 3;
+  flex-basis: 60%;
 }
 
 .right-contact {
-	margin-left: 24px;
-	font-size: 10px;
-	line-height: 24px;
-	flex-grow: 2;
-	text-align: right;
-	flex-basis: 40%;
+  margin-left: 24px;
+  font-size: 10px;
+  line-height: 24px;
+  flex-grow: 2;
+  text-align: right;
+  flex-basis: 40%;
 }
 
-
 .my-profile {
-	margin-top: 24px;
-	font-size: 12px;
+  margin-top: 24px;
+  font-size: 12px;
 }
 
 .my-name {
-	font-size: 48px;
-	color: rgba(0, 0, 0, 0.801);
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.801);
 }
 
 .my-title {
-	font-size: 24px;
-	color: #2962ff;
+  font-size: 24px;
+  color: #2962ff;
 }
 
 .icon {
-	max-height: 24px;
-	min-height: 24px;
-	max-width: 24px;
-	min-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  min-width: 24px;
 }
 
 .icon img {
-	margin: 4px;
-	margin-left: 8px;
-	position: relative;
-	transform: translateY(7px);
+  margin: 4px;
+  margin-left: 8px;
+  position: relative;
+  transform: translateY(7px);
 }
 
 .section-title {
-	font-family: 'Ubuntu-Bold', Calibri, 'Trebuchet MS', sans-serif;
-	line-height: 24px;
-	font-size: 20px;
-	margin-bottom: 4px;
+  font-family: "Ubuntu-Bold", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 4px;
 }
 .work-title {
-	font-family: 'Ubuntu-Bold', Calibri, 'Trebuchet MS', sans-serif;
-	line-height: 24px;
-	font-size: 18px;
+  font-family: "Ubuntu-Bold", Calibri, "Trebuchet MS", sans-serif;
+	line-height: 20px;
+	font-size: 16px;
+	margin-bottom: 4px;	
 }
+
+.education {
+	margin-bottom: 24px;
+}
+
+.certifications {
+	margin-bottom: 24px;
+}
+
 .little-inline-flex {
-	display: flex;
-	/* justify-content: space-around; */
-	font-size: 12px;
-	color: #2962ff;
-	font-family: 'Ubuntu-LightItalic', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  /* justify-content: space-around; */
+  font-size: 12px;
+  color: #2962ff;
+  font-family: "Ubuntu-LightItalic", Calibri, "Trebuchet MS", sans-serif;
 }
 .spacer {
-	flex: 1  1 auto;
+  flex: 1 1 auto;
+}
+
+.work-experience {
+	margin-bottom: 24px;
 }
 
 .work-experience-points {
-	margin-bottom: 6px;	
+  margin-bottom: 6px;
 }
 
+.place-of-work, .university {
+	
+	font-size: 14px;
+}
+
+
 @font-face {
-	font-family : 'Ubuntu-Bold';
-	src: url(/fonts/Ubuntu-Bold.ttf);
+  font-family: "Ubuntu-Bold";
+  src: url(/fonts/Ubuntu-Bold.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-BoldItalic';
-	src: url(/fonts/Ubuntu-BoldItalic.ttf);
+  font-family: "Ubuntu-BoldItalic";
+  src: url(/fonts/Ubuntu-BoldItalic.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-Italic';
-	src: url(/fonts/Ubuntu-Italic.ttf);
+  font-family: "Ubuntu-Italic";
+  src: url(/fonts/Ubuntu-Italic.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-Light';
-	src: url(/fonts/Ubuntu-Light.ttf);
+  font-family: "Ubuntu-Light";
+  src: url(/fonts/Ubuntu-Light.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-LightItalic';
-	src: url(/fonts/Ubuntu-LightItalic.ttf);
+  font-family: "Ubuntu-LightItalic";
+  src: url(/fonts/Ubuntu-LightItalic.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-Medium';
-	src: url(/fonts/Ubuntu-Medium.ttf);
+  font-family: "Ubuntu-Medium";
+  src: url(/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-MediumItalic';
-	src: url(/fonts/Ubuntu-MediumItalic.ttf);
+  font-family: "Ubuntu-MediumItalic";
+  src: url(/fonts/Ubuntu-MediumItalic.ttf);
 }
 @font-face {
-	font-family : 'Ubuntu-Regular';
-	src: url(/fonts/Ubuntu-Regular.ttf);
+  font-family: "Ubuntu-Regular";
+  src: url(/fonts/Ubuntu-Regular.ttf);
 }
+
+.cert-div {
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.skill-group-name {
+	font-family: "Ubuntu-Bold", Calibri, "Trebuchet MS", sans-serif;
+	line-height: 20px;
+	font-size: 16px;
+	margin-bottom: 4px;	
+}
+
+.skill-group {
+  font-size: 12px;
+}
+
+.little-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.little-grid .grid-item {
+  line-height: 20px;
+  padding: 8px;
+}
+
+.interests {
+  margin-top: 24px;
+}
+
+
+
+
