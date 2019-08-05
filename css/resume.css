@@ -202,9 +202,24 @@ ul li::before {
 }
 
 .little-grid .grid-item {
-  line-height: 20px;
+  /* line-height: 20px; */
   padding: 8px;
+  
 }
+
+.interests-item {
+  padding: 8px;
+  background-color: #f2f2f3;
+  
+  font-weight: bold; 
+  border-radius: 12px;
+  margin: 4px;
+}
+.interests-section {
+  display: inline-block;
+  margin-top: 24px;
+}
+
 
 .interests {
   margin-top: 24px;
